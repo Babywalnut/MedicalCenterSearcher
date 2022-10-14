@@ -1,19 +1,18 @@
 //
-//  ViewController.swift
+//  MapViewController.swift
 //  MedicalCenterSearcher
 //
 //  Created by 김민성 on 2022/10/14.
 //
 
-import UIKit
+import RxCocoa
+import RxSwift
+import SnapKit
+import Then
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
   }
-
-
 }
-
