@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C6559C4AAD065D6C0B664AF /* Pods_MedicalCenterSearcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3825F344525D5629C938D7E5 /* Pods_MedicalCenterSearcher.framework */; };
 		B4E4870228F9714E00B659FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4870128F9714E00B659FD /* AppDelegate.swift */; };
 		B4E4870428F9714E00B659FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4870328F9714E00B659FD /* SceneDelegate.swift */; };
 		B4E4870628F9714E00B659FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4870528F9714E00B659FD /* ViewController.swift */; };
-		B4E4870928F9714E00B659FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E4870728F9714E00B659FD /* Main.storyboard */; };
 		B4E4870B28F9715000B659FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E4870A28F9715000B659FD /* Assets.xcassets */; };
 		B4E4870E28F9715000B659FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E4870C28F9715000B659FD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3825F344525D5629C938D7E5 /* Pods_MedicalCenterSearcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalCenterSearcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D79C18CA87A3F8DDA50C4D /* Pods-MedicalCenterSearcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalCenterSearcher.debug.xcconfig"; path = "Target Support Files/Pods-MedicalCenterSearcher/Pods-MedicalCenterSearcher.debug.xcconfig"; sourceTree = "<group>"; };
+		87130B76ADE629BA8E5D9CEC /* Pods-MedicalCenterSearcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalCenterSearcher.release.xcconfig"; path = "Target Support Files/Pods-MedicalCenterSearcher/Pods-MedicalCenterSearcher.release.xcconfig"; sourceTree = "<group>"; };
 		B4E486FE28F9714E00B659FD /* MedicalCenterSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalCenterSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E4870128F9714E00B659FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E4870328F9714E00B659FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B4E4870528F9714E00B659FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B4E4870828F9714E00B659FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4E4870A28F9715000B659FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4E4870D28F9715000B659FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4E4870F28F9715000B659FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C6559C4AAD065D6C0B664AF /* Pods_MedicalCenterSearcher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		410D5D63DC0635D457BEC52B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3825F344525D5629C938D7E5 /* Pods_MedicalCenterSearcher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		488C0AA85125C44D3E8D4DCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71D79C18CA87A3F8DDA50C4D /* Pods-MedicalCenterSearcher.debug.xcconfig */,
+				87130B76ADE629BA8E5D9CEC /* Pods-MedicalCenterSearcher.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B4E486F528F9714E00B659FD = {
 			isa = PBXGroup;
 			children = (
 				B4E4870028F9714E00B659FD /* MedicalCenterSearcher */,
 				B4E486FF28F9714E00B659FD /* Products */,
+				488C0AA85125C44D3E8D4DCD /* Pods */,
+				410D5D63DC0635D457BEC52B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,7 +81,6 @@
 				B4E4870128F9714E00B659FD /* AppDelegate.swift */,
 				B4E4870328F9714E00B659FD /* SceneDelegate.swift */,
 				B4E4870528F9714E00B659FD /* ViewController.swift */,
-				B4E4870728F9714E00B659FD /* Main.storyboard */,
 				B4E4870A28F9715000B659FD /* Assets.xcassets */,
 				B4E4870C28F9715000B659FD /* LaunchScreen.storyboard */,
 				B4E4870F28F9715000B659FD /* Info.plist */,
@@ -74,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4E4871228F9715000B659FD /* Build configuration list for PBXNativeTarget "MedicalCenterSearcher" */;
 			buildPhases = (
+				32A8FC8F620B35F0C35C53AD /* [CP] Check Pods Manifest.lock */,
 				B4E486FA28F9714E00B659FD /* Sources */,
 				B4E486FB28F9714E00B659FD /* Frameworks */,
 				B4E486FC28F9714E00B659FD /* Resources */,
+				D75B70B400B8466EC0F477CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +150,52 @@
 			files = (
 				B4E4870E28F9715000B659FD /* LaunchScreen.storyboard in Resources */,
 				B4E4870B28F9715000B659FD /* Assets.xcassets in Resources */,
-				B4E4870928F9714E00B659FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32A8FC8F620B35F0C35C53AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedicalCenterSearcher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D75B70B400B8466EC0F477CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicalCenterSearcher/Pods-MedicalCenterSearcher-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicalCenterSearcher/Pods-MedicalCenterSearcher-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedicalCenterSearcher/Pods-MedicalCenterSearcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4E486FA28F9714E00B659FD /* Sources */ = {
@@ -147,14 +211,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B4E4870728F9714E00B659FD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B4E4870828F9714E00B659FD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B4E4870C28F9715000B659FD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -217,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +340,7 @@
 		};
 		B4E4871328F9715000B659FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71D79C18CA87A3F8DDA50C4D /* Pods-MedicalCenterSearcher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,7 +351,7 @@
 				INFOPLIST_FILE = MedicalCenterSearcher/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,12 +363,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B4E4871428F9715000B659FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87130B76ADE629BA8E5D9CEC /* Pods-MedicalCenterSearcher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,7 +380,7 @@
 				INFOPLIST_FILE = MedicalCenterSearcher/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +392,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
