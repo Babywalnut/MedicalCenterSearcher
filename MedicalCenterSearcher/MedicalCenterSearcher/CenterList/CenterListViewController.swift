@@ -11,7 +11,7 @@ import SnapKit
 import Then
 
 class CenterListViewController: UIViewController {
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
   }
