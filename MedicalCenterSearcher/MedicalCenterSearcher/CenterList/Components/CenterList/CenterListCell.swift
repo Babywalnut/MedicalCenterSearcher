@@ -12,16 +12,16 @@ import Then
 
 final class CenterListCell: UITableViewCell {
 
+  static let identifier = "CenterListCell"
+
   private let centerNameKeyLabel = UILabel()
   private let buildingNameKeyLabel = UILabel()
   private let addressKeyLabel = UILabel()
   private let updateDateTimeKeyLabel = UILabel()
-
   private let centerNameValueLabel = UILabel()
   private let buildingNameValueLabel = UILabel()
   private let addressValueLabel = UILabel()
   private let updateDateTimeValueLabel = UILabel()
-
   private let keyValueDistributionStackView = UIStackView()
   private let centerInfoKeyStackView = UIStackView()
   private let centerInfoValueStackView = UIStackView()
@@ -38,6 +38,30 @@ final class CenterListCell: UITableViewCell {
   }
 
   private func attribute() {
+    [
+      self.centerNameKeyLabel,
+      self.buildingNameKeyLabel,
+      self.addressKeyLabel,
+      self.updateDateTimeKeyLabel
+    ].forEach {
+      $0.do { label in
+        label.font = .systemFont(ofSize: 20)
+        label.textColor = .darkGray
+      }
+    }
+
+    [
+      self.centerNameValueLabel,
+      self.buildingNameValueLabel,
+      self.addressValueLabel,
+      self.updateDateTimeValueLabel
+    ].forEach {
+      $0.do { label in
+        label.font = .systemFont(ofSize: 20)
+        label.textColor = .black
+      }
+    }
+
     self.keyValueDistributionStackView.do {
       $0.axis = .horizontal
       $0.alignment = .fill
@@ -58,6 +82,8 @@ final class CenterListCell: UITableViewCell {
   }
 
   private func layout() {
+    self.contentView.addSubview(self.keyValueDistributionStackView)
+
     [
       self.centerInfoKeyStackView,
       self.centerInfoValueStackView
@@ -84,13 +110,13 @@ final class CenterListCell: UITableViewCell {
     }
 
     self.keyValueDistributionStackView.snp.makeConstraints {
-      $0.top.leading.bottom.trailing.equalToSuperview().inset(10)
+      $0.top.leading.bottom.trailing.equalTo(self.contentView).inset(10)
     }
 
     self.centerInfoKeyStackView.snp.makeConstraints {
       $0.top.equalToSuperview()
       $0.leading.equalToSuperview()
-      $0.width.equalToSuperview().multipliedBy(1/3)
+      $0.width.equalToSuperview().dividedBy(4)
     }
 
     self.centerInfoValueStackView.snp.makeConstraints {
