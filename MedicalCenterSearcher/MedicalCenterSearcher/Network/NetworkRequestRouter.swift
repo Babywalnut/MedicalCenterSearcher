@@ -20,7 +20,7 @@ enum NetworkRequestRouter: URLRequestConvertible {
   private var path: String {
     switch self {
     case .fetchAllCenterDate:
-      return "/centers?page=1&perPage=10&serviceKey=zTlMijyX4v2prsaIl46HMBmskiLMPnJuL2ryOhY+bGw2lS3HEU1xJq8I5833Oj24q5NzIWJtRch++R8G3tsUkQ=="
+      return "/centers?page=1&perPage=10&serviceKey=\(APIKey.centerAPIKey)"
     }
   }
 

@@ -11,6 +11,7 @@
 		B4AFA0D828FBF691001429C0 /* CenterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0D728FBF691001429C0 /* CenterInfo.swift */; };
 		B4AFA0DA28FBF95A001429C0 /* NetworkRequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0D928FBF95A001429C0 /* NetworkRequestRouter.swift */; };
 		B4AFA0DC28FC009F001429C0 /* APINetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0DB28FC009F001429C0 /* APINetworkError.swift */; };
+		B4AFA0E028FC433C001429C0 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0DF28FC433C001429C0 /* APIKey.swift */; };
 		B4E4870228F9714E00B659FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4870128F9714E00B659FD /* AppDelegate.swift */; };
 		B4E4870428F9714E00B659FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4870328F9714E00B659FD /* SceneDelegate.swift */; };
 		B4E4870B28F9715000B659FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E4870A28F9715000B659FD /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		B4AFA0D728FBF691001429C0 /* CenterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterInfo.swift; sourceTree = "<group>"; };
 		B4AFA0D928FBF95A001429C0 /* NetworkRequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestRouter.swift; sourceTree = "<group>"; };
 		B4AFA0DB28FC009F001429C0 /* APINetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINetworkError.swift; sourceTree = "<group>"; };
+		B4AFA0DF28FC433C001429C0 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		B4E486FE28F9714E00B659FD /* MedicalCenterSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalCenterSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E4870128F9714E00B659FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E4870328F9714E00B659FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				B4E4870A28F9715000B659FD /* Assets.xcassets */,
 				B4E4870C28F9715000B659FD /* LaunchScreen.storyboard */,
 				B4E4870F28F9715000B659FD /* Info.plist */,
+				B4AFA0DF28FC433C001429C0 /* APIKey.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				B4E4872228F98ABA00B659FD /* MapViewController.swift in Sources */,
 				B4AFA0D828FBF691001429C0 /* CenterInfo.swift in Sources */,
 				B4AFA0DC28FC009F001429C0 /* APINetworkError.swift in Sources */,
+				B4AFA0E028FC433C001429C0 /* APIKey.swift in Sources */,
 				B4E4872428F98AC500B659FD /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
