@@ -12,6 +12,7 @@
 		B4AFA0DA28FBF95A001429C0 /* NetworkRequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0D928FBF95A001429C0 /* NetworkRequestRouter.swift */; };
 		B4AFA0DC28FC009F001429C0 /* APINetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0DB28FC009F001429C0 /* APINetworkError.swift */; };
 		B4AFA0E028FC433C001429C0 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0DF28FC433C001429C0 /* APIKey.swift */; };
+		B4AFA0E228FC4838001429C0 /* CenterInfoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0E128FC4838001429C0 /* CenterInfoContainerView.swift */; };
 		B4E4870228F9714E00B659FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4870128F9714E00B659FD /* AppDelegate.swift */; };
 		B4E4870428F9714E00B659FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4870328F9714E00B659FD /* SceneDelegate.swift */; };
 		B4E4870B28F9715000B659FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E4870A28F9715000B659FD /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		B4AFA0D928FBF95A001429C0 /* NetworkRequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestRouter.swift; sourceTree = "<group>"; };
 		B4AFA0DB28FC009F001429C0 /* APINetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINetworkError.swift; sourceTree = "<group>"; };
 		B4AFA0DF28FC433C001429C0 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		B4AFA0E128FC4838001429C0 /* CenterInfoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterInfoContainerView.swift; sourceTree = "<group>"; };
 		B4E486FE28F9714E00B659FD /* MedicalCenterSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalCenterSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E4870128F9714E00B659FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E4870328F9714E00B659FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		B4E4872828F98B7900B659FD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B4AFA0E128FC4838001429C0 /* CenterInfoContainerView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				B4AFA0DC28FC009F001429C0 /* APINetworkError.swift in Sources */,
 				B4AFA0E028FC433C001429C0 /* APIKey.swift in Sources */,
 				B4E4872428F98AC500B659FD /* MapViewModel.swift in Sources */,
+				B4AFA0E228FC4838001429C0 /* CenterInfoContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
