@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5C6559C4AAD065D6C0B664AF /* Pods_MedicalCenterSearcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3825F344525D5629C938D7E5 /* Pods_MedicalCenterSearcher.framework */; };
+		B4AFA0D828FBF691001429C0 /* CenterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0D728FBF691001429C0 /* CenterInfo.swift */; };
+		B4AFA0DA28FBF95A001429C0 /* NetworkRequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0D928FBF95A001429C0 /* NetworkRequestRouter.swift */; };
+		B4AFA0DC28FC009F001429C0 /* APINetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0DB28FC009F001429C0 /* APINetworkError.swift */; };
 		B4E4870228F9714E00B659FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4870128F9714E00B659FD /* AppDelegate.swift */; };
 		B4E4870428F9714E00B659FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4870328F9714E00B659FD /* SceneDelegate.swift */; };
 		B4E4870B28F9715000B659FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E4870A28F9715000B659FD /* Assets.xcassets */; };
@@ -29,6 +32,9 @@
 		3825F344525D5629C938D7E5 /* Pods_MedicalCenterSearcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalCenterSearcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D79C18CA87A3F8DDA50C4D /* Pods-MedicalCenterSearcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalCenterSearcher.debug.xcconfig"; path = "Target Support Files/Pods-MedicalCenterSearcher/Pods-MedicalCenterSearcher.debug.xcconfig"; sourceTree = "<group>"; };
 		87130B76ADE629BA8E5D9CEC /* Pods-MedicalCenterSearcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalCenterSearcher.release.xcconfig"; path = "Target Support Files/Pods-MedicalCenterSearcher/Pods-MedicalCenterSearcher.release.xcconfig"; sourceTree = "<group>"; };
+		B4AFA0D728FBF691001429C0 /* CenterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterInfo.swift; sourceTree = "<group>"; };
+		B4AFA0D928FBF95A001429C0 /* NetworkRequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestRouter.swift; sourceTree = "<group>"; };
+		B4AFA0DB28FC009F001429C0 /* APINetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINetworkError.swift; sourceTree = "<group>"; };
 		B4E486FE28F9714E00B659FD /* MedicalCenterSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalCenterSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E4870128F9714E00B659FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E4870328F9714E00B659FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,7 +182,10 @@
 		B4E4872A28F98EF700B659FD /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B4AFA0DB28FC009F001429C0 /* APINetworkError.swift */,
 				B4E4872B28F98F0E00B659FD /* NetworkManager.swift */,
+				B4AFA0D928FBF95A001429C0 /* NetworkRequestRouter.swift */,
+				B4AFA0D728FBF691001429C0 /* CenterInfo.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -323,7 +332,10 @@
 				B4E4872028F98AA900B659FD /* CenterInfoViewModel.swift in Sources */,
 				B4E4870428F9714E00B659FD /* SceneDelegate.swift in Sources */,
 				B4E4871E28F98A9C00B659FD /* CenterInfoViewController.swift in Sources */,
+				B4AFA0DA28FBF95A001429C0 /* NetworkRequestRouter.swift in Sources */,
 				B4E4872228F98ABA00B659FD /* MapViewController.swift in Sources */,
+				B4AFA0D828FBF691001429C0 /* CenterInfo.swift in Sources */,
+				B4AFA0DC28FC009F001429C0 /* APINetworkError.swift in Sources */,
 				B4E4872428F98AC500B659FD /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
