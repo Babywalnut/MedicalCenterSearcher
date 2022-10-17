@@ -14,6 +14,8 @@
 		B4AFA0E028FC433C001429C0 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0DF28FC433C001429C0 /* APIKey.swift */; };
 		B4AFA0E228FC4838001429C0 /* CenterInfoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0E128FC4838001429C0 /* CenterInfoContainerView.swift */; };
 		B4AFA0E428FC48DC001429C0 /* CenterInfoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0E328FC48DC001429C0 /* CenterInfoItemView.swift */; };
+		B4AFA0E628FD3B66001429C0 /* CenterListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0E528FD3B66001429C0 /* CenterListData.swift */; };
+		B4AFA0E828FD3E85001429C0 /* CenterListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0E728FD3E85001429C0 /* CenterListTableViewModel.swift */; };
 		B4E4870228F9714E00B659FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4870128F9714E00B659FD /* AppDelegate.swift */; };
 		B4E4870428F9714E00B659FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4870328F9714E00B659FD /* SceneDelegate.swift */; };
 		B4E4870B28F9715000B659FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E4870A28F9715000B659FD /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		B4AFA0DF28FC433C001429C0 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		B4AFA0E128FC4838001429C0 /* CenterInfoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterInfoContainerView.swift; sourceTree = "<group>"; };
 		B4AFA0E328FC48DC001429C0 /* CenterInfoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterInfoItemView.swift; sourceTree = "<group>"; };
+		B4AFA0E528FD3B66001429C0 /* CenterListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterListData.swift; sourceTree = "<group>"; };
+		B4AFA0E728FD3E85001429C0 /* CenterListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterListTableViewModel.swift; sourceTree = "<group>"; };
 		B4E486FE28F9714E00B659FD /* MedicalCenterSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalCenterSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E4870128F9714E00B659FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E4870328F9714E00B659FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +208,8 @@
 			children = (
 				B4E4872D28F99F4800B659FD /* CenterListTableView.swift */,
 				B4E4872F28F99F5C00B659FD /* CenterListCell.swift */,
+				B4AFA0E528FD3B66001429C0 /* CenterListData.swift */,
+				B4AFA0E728FD3E85001429C0 /* CenterListTableViewModel.swift */,
 			);
 			path = CenterList;
 			sourceTree = "<group>";
@@ -332,7 +338,9 @@
 			files = (
 				B4E4873028F99F5C00B659FD /* CenterListCell.swift in Sources */,
 				B4E4872E28F99F4800B659FD /* CenterListTableView.swift in Sources */,
+				B4AFA0E628FD3B66001429C0 /* CenterListData.swift in Sources */,
 				B4AFA0E428FC48DC001429C0 /* CenterInfoItemView.swift in Sources */,
+				B4AFA0E828FD3E85001429C0 /* CenterListTableViewModel.swift in Sources */,
 				B4E4872628F98ADF00B659FD /* CenterUseCase.swift in Sources */,
 				B4E4871A28F98A7200B659FD /* CenterListViewController.swift in Sources */,
 				B4E4872C28F98F0E00B659FD /* NetworkManager.swift in Sources */,

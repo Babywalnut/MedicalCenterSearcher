@@ -24,4 +24,5 @@ struct CenterModel: Decodable {
   var lng: String
   var phoneNumber: String
   var updatedAt: String
+  var convertedUpdatedAt: Date?
 }

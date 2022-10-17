@@ -31,6 +31,7 @@ final class CenterListCell: UITableViewCell {
 
     self.attribute()
     self.layout()
+    self.backgroundColor = .white
   }
 
   required init?(coder: NSCoder) {
@@ -45,7 +46,7 @@ final class CenterListCell: UITableViewCell {
       self.updateDateTimeKeyLabel
     ].forEach {
       $0.do { label in
-        label.font = .systemFont(ofSize: 20)
+        label.font = .systemFont(ofSize: 14)
         label.textColor = .darkGray
       }
     }
@@ -57,7 +58,7 @@ final class CenterListCell: UITableViewCell {
       self.updateDateTimeValueLabel
     ].forEach {
       $0.do { label in
-        label.font = .systemFont(ofSize: 20)
+        label.font = .systemFont(ofSize: 14)
         label.textColor = .black
       }
     }
@@ -72,12 +73,14 @@ final class CenterListCell: UITableViewCell {
       $0.axis = .vertical
       $0.alignment = .leading
       $0.distribution = .fillEqually
+      $0.spacing = 10
     }
 
     self.centerInfoValueStackView.do {
       $0.axis = .vertical
       $0.alignment = .leading
       $0.distribution = .fillEqually
+      $0.spacing = 10
     }
   }
 
@@ -123,5 +126,19 @@ final class CenterListCell: UITableViewCell {
       $0.bottom.equalToSuperview()
       $0.trailing.equalToSuperview()
     }
+  }
+
+  func setData(with data: CenterListData) {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+
+    self.centerNameKeyLabel.text = "센터명"
+    self.buildingNameKeyLabel.text = "건물명"
+    self.addressKeyLabel.text = "주소"
+    self.updateDateTimeKeyLabel.text = "업데이트 시간"
+    self.centerNameValueLabel.text = data.centerName
+    self.buildingNameValueLabel.text = data.facilityName
+    self.addressValueLabel.text = data.address
+    self.updateDateTimeValueLabel.text = dateFormatter.string(from: data.updateAt)
   }
 }
