@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   
   func createdNavigationController() -> UINavigationController {
     let navigationController = UINavigationController(rootViewController: CenterListViewController())
-    
+
     return navigationController
   }
 }
