@@ -14,7 +14,7 @@ enum NetworkRequestRouter: URLRequestConvertible {
   case fetchAllCenterDate
 
   private var baseURLString: String {
-    return "api.odcloud.kr/api/15077586/v1"
+    return "https://api.odcloud.kr/api/15077586/v1"
   }
 
   private var path: String {

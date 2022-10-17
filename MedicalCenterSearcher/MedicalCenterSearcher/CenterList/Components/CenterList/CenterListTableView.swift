@@ -12,10 +12,12 @@ import Then
 
 class CenterListTableView: UITableView {
 
+  private let disposeBag = DisposeBag()
+
   override init(frame: CGRect, style: UITableView.Style) {
     super.init(frame: frame, style: style)
 
-    configure()
+    self.configure()
   }
 
   required init?(coder: NSCoder) {
@@ -26,5 +28,19 @@ class CenterListTableView: UITableView {
     self.backgroundColor = .systemBackground
     self.register(CenterListCell.self, forCellReuseIdentifier: CenterListCell.identifier)
     self.separatorStyle = .singleLine
+  }
+
+  func bind(viewModel: CenterListTableViewModel) {
+    viewModel.cellData
+      .drive(self.rx.items) { tableView, row, data in
+        let index = IndexPath(row: row, section: 0)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CenterListCell.identifier, for: index) as? CenterListCell else {
+          return CenterListCell()
+        }
+
+        cell.setData(with: data)
+        cell.selectionStyle = .none
+        return cell
+      }.disposed(by: self.disposeBag)
   }
 }
