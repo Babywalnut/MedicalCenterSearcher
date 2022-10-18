@@ -12,16 +12,17 @@ class CenterListViewModel {
 
   let centerListTableViewModel: CenterListTableViewModel
   private let disposeBag = DisposeBag()
+
   init(useCase: CenterUseCase) {
     self.centerListTableViewModel = CenterListTableViewModel()
-
 
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
     dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone?
 
-    let result = useCase.fetchCenterListData()
-      .flatMap{ $0 }
+    let result = self.centerListTableViewModel.pageToRequest
+      .map(useCase.fetchCenterListData(page:))
+      .flatMap { $0 }
       .map(useCase.centerResponse)
       .filter { $0 != nil }
 
@@ -36,11 +37,14 @@ class CenterListViewModel {
           model.convertedUpdatedAt = dateFormatter.date(from:centerModel.updatedAt) ?? Date()
           models.append(model)
         }
+
         models.sorted {
           $0.convertedUpdatedAt! < $1.convertedUpdatedAt!
         }
+
         useCase.storeModels(models: models)
-        return models
+
+        return useCase.centerData
       }
 
     sortedResult

@@ -10,9 +10,9 @@ import RxSwift
 
 struct NetworkManager {
 
-  func fetchAllCenterData() -> Single<Result<CenterInfo,APINetworkError>> {
+  func fetchAllCenterData(page: Int) -> Single<Result<CenterInfo,APINetworkError>> {
     return Single.create { observer -> Disposable in
-      AF.request(NetworkRequestRouter.fetchAllCenterDate)
+      AF.request(NetworkRequestRouter.fetchAllCenterDate(page: page))
         .validate()
         .response { response in
           switch response.result {

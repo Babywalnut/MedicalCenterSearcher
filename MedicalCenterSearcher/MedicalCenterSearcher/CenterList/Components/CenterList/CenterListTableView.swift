@@ -12,6 +12,7 @@ import Then
 
 class CenterListTableView: UITableView {
 
+  private var pageCount = 1
   private let disposeBag = DisposeBag()
 
   override init(frame: CGRect, style: UITableView.Style) {
@@ -42,5 +43,21 @@ class CenterListTableView: UITableView {
         cell.selectionStyle = .none
         return cell
       }.disposed(by: self.disposeBag)
+
+    self.rx.didEndDragging
+      .map { _ -> Int in
+        let offsetY = self.contentOffset.y
+        let contentHeight = self.contentSize.height
+        let height = self.frame.size.height
+
+        if offsetY > contentHeight - height {
+          self.pageCount += 1
+          return self.pageCount
+        } else {
+          return self.pageCount
+        }
+      }
+      .bind(to: viewModel.scrollUnderBottom)
+      .disposed(by: self.disposeBag)
   }
 }

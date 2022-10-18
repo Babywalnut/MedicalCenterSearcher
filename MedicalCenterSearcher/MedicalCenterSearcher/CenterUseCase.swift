@@ -16,22 +16,10 @@ class CenterUseCase {
   init(network: NetworkManager) {
     self.network = network
     self.centerData = []
-    self.storeConvertedCenterData()
   }
 
-  func fetchCenterListData() -> Observable<Single<Result<CenterInfo, APINetworkError>>> {
-    return Observable.just(network.fetchAllCenterData())
-  }
-
-  private func storeConvertedCenterData() {
-    let centerListData = Observable.just(network.fetchAllCenterData())
-      .flatMap { $0 }
-    centerListData
-      .map(self.centerResponse)
-      .filter { $0 != nil }
-      .bind {
-        self.centerData = $0!.data
-      }
+  func fetchCenterListData(page: Int) -> Single<Result<CenterInfo, APINetworkError>> {
+    return network.fetchAllCenterData(page: page)
   }
 
   func centerResponse(result: Result<CenterInfo, APINetworkError>) -> CenterInfo? {
@@ -46,7 +34,7 @@ class CenterUseCase {
   }
 
   func storeModels(models: [CenterModel]) {
-    self.centerData = models
+    self.centerData.append(contentsOf: models)
   }
 
   func centerListCellData(models: [CenterModel]) -> [CenterListData] {
@@ -63,6 +51,5 @@ class CenterUseCase {
     }
     return result
   }
-
 }
 
