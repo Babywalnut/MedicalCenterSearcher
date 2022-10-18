@@ -10,7 +10,7 @@ import RxSwift
 import SnapKit
 import Then
 
-class CenterListTableView: UITableView {
+final class CenterListTableView: UITableView {
 
   private var pageCount = 1
   private let disposeBag = DisposeBag()
@@ -58,6 +58,12 @@ class CenterListTableView: UITableView {
         }
       }
       .bind(to: viewModel.scrollUnderBottom)
+      .disposed(by: self.disposeBag)
+
+    viewModel.moveTop
+      .bind {
+        self.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+      }
       .disposed(by: self.disposeBag)
   }
 }

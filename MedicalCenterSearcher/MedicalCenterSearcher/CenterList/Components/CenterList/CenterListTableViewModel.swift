@@ -13,6 +13,7 @@ class CenterListTableViewModel {
   let centerListData = PublishSubject<[CenterListData]>()
   let cellData: Driver<[CenterListData]>
   let scrollUnderBottom = BehaviorSubject<Int>(value: 1)
+  let moveTop = PublishSubject<Void>()
   var pageToRequest: Observable<Int>
 
   private let disposeBag = DisposeBag()

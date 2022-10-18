@@ -11,10 +11,12 @@ import RxSwift
 class CenterListViewModel {
 
   let centerListTableViewModel: CenterListTableViewModel
+  let moveTopButtonViewModel: MoveTopButtonViewModel
   private let disposeBag = DisposeBag()
 
   init(useCase: CenterUseCase) {
     self.centerListTableViewModel = CenterListTableViewModel()
+    self.moveTopButtonViewModel = MoveTopButtonViewModel()
 
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -51,5 +53,8 @@ class CenterListViewModel {
       .map(useCase.centerListCellData)
       .bind(to: self.centerListTableViewModel.centerListData)
       .disposed(by: self.disposeBag)
+
+    self.moveTopButtonViewModel.buttonClicked
+      .bind(to: self.centerListTableViewModel.moveTop)
   }
 }

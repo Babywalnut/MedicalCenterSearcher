@@ -61,5 +61,6 @@ class CenterListViewController: UIViewController, UITableViewDelegate {
 
   private func bind() {
     self.centerList.bind(viewModel: self.centerListViewModel.centerListTableViewModel)
+    self.moveTopButton.bind(viewModel: self.centerListViewModel.moveTopButtonViewModel)
     }
 }

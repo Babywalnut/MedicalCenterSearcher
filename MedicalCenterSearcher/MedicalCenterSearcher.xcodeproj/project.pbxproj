@@ -16,6 +16,7 @@
 		B4AFA0E428FC48DC001429C0 /* CenterInfoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0E328FC48DC001429C0 /* CenterInfoItemView.swift */; };
 		B4AFA0E628FD3B66001429C0 /* CenterListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0E528FD3B66001429C0 /* CenterListData.swift */; };
 		B4AFA0E828FD3E85001429C0 /* CenterListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFA0E728FD3E85001429C0 /* CenterListTableViewModel.swift */; };
+		B4B1746228FE951B00B23A26 /* MoveTopButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1746128FE951B00B23A26 /* MoveTopButtonViewModel.swift */; };
 		B4E4870228F9714E00B659FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4870128F9714E00B659FD /* AppDelegate.swift */; };
 		B4E4870428F9714E00B659FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4870328F9714E00B659FD /* SceneDelegate.swift */; };
 		B4E4870B28F9715000B659FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E4870A28F9715000B659FD /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		B4AFA0E328FC48DC001429C0 /* CenterInfoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterInfoItemView.swift; sourceTree = "<group>"; };
 		B4AFA0E528FD3B66001429C0 /* CenterListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterListData.swift; sourceTree = "<group>"; };
 		B4AFA0E728FD3E85001429C0 /* CenterListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterListTableViewModel.swift; sourceTree = "<group>"; };
+		B4B1746128FE951B00B23A26 /* MoveTopButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveTopButtonViewModel.swift; sourceTree = "<group>"; };
 		B4E486FE28F9714E00B659FD /* MedicalCenterSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalCenterSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E4870128F9714E00B659FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E4870328F9714E00B659FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E4873728FAE93D00B659FD /* MoveTopButton.swift */,
+				B4B1746128FE951B00B23A26 /* MoveTopButtonViewModel.swift */,
 			);
 			path = MoveTopButton;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				B4E4870428F9714E00B659FD /* SceneDelegate.swift in Sources */,
 				B4E4871E28F98A9C00B659FD /* CenterInfoViewController.swift in Sources */,
 				B4AFA0DA28FBF95A001429C0 /* NetworkRequestRouter.swift in Sources */,
+				B4B1746228FE951B00B23A26 /* MoveTopButtonViewModel.swift in Sources */,
 				B4E4872228F98ABA00B659FD /* MapViewController.swift in Sources */,
 				B4AFA0D828FBF691001429C0 /* CenterInfo.swift in Sources */,
 				B4AFA0DC28FC009F001429C0 /* APINetworkError.swift in Sources */,

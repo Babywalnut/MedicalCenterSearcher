@@ -5,10 +5,13 @@
 //  Created by 김민성 on 2022/10/15.
 //
 
-import UIKit
+import RxCocoa
+import RxSwift
 
 final class MoveTopButton: UIButton {
-  
+
+  private let disposeBag = DisposeBag()
+
   override init(frame: CGRect) {
     super.init(frame: frame)
 
@@ -33,5 +36,11 @@ final class MoveTopButton: UIButton {
     self.snp.makeConstraints {
       $0.width.height.equalTo(60)
     }
+  }
+
+  func bind(viewModel: MoveTopButtonViewModel) {
+    self.rx.tap
+      .bind(to: viewModel.buttonClicked)
+      .disposed(by: self.disposeBag)
   }
 }
